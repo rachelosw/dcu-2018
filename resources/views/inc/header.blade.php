@@ -17,11 +17,7 @@
               <li><a class="dropdown-item" href="{{ route('dcu-specials') }}">{{ __('DCU Specials')}}</a></li>
               </ul>
               </li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          
           @guest
           <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
           <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
@@ -41,7 +37,6 @@
             </ul>
           </li>
           @endguest
-          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </div>
