@@ -64,4 +64,12 @@ class SeminarController extends Controller
         ->with('seminars', $seminars);
 
     }
+
+    public function getDcuCare() {
+        $category = SeminarCategory::where('category_name', 'DCU Care')->first();
+        $seminars = Seminar::where('seminar_category', 'DCU Care')->orderBy('seminar_time', 'asc')->get();
+        return view('dcu-seminars')
+        ->with('category', $category)
+        ->with('seminars', $seminars);
+    }
 }

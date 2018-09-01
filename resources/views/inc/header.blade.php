@@ -15,6 +15,7 @@
               <li><a class="dropdown-item" href="{{ route('dcu-inspiration') }}">{{ __('DCU Inspiration')}}</a></li>
               <li><a class="dropdown-item" href="{{ route('dcu-opportunities') }}">{{ __('DCU Opportunities')}}</a></li>
               <li><a class="dropdown-item" href="{{ route('dcu-specials') }}">{{ __('DCU Specials')}}</a></li>
+              <li><a class="dropdown-item" href="{{ route('dcu-care') }}">{{ __('DCU Care')}}</a></li>
               </ul>
               </li>
           
