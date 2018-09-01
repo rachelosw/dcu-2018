@@ -60,5 +60,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'is_admin' => \App\Http\Middleware\IsAdmin::class,
+        'is_accepted' => \App\Http\Middleware\IsAccepted::class,
+        'is_pending' => \App\Http\Middleware\IsPending::class,
     ];
 }
