@@ -49,9 +49,12 @@
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Upload') }}
-                                </button>
+                                </button><br><br>
+                                <a href="{{ URL::previous() }}">< Go Back</a>
                             </div>
+                            
                         </div>
+                    
                     </form>
                     </div>
                     </div>

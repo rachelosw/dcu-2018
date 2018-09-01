@@ -19,7 +19,7 @@ class IsPending
     {
         if(Auth::user()) {
             if (Auth::user()->isAccepted()) {
-                return Redirect::to('/dashboard/payment');
+                return Redirect::to('/dashboard');
                 
             }
             return $next($request);
