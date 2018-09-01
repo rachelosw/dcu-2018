@@ -40,6 +40,7 @@ class LoginController extends Controller
     }
 
     public function authenticated(Request $request, $user) {
+        $user->last_login = new \DateTime();
         $user->save();
     }
 }
