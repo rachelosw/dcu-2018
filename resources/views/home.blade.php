@@ -45,7 +45,7 @@
 
     <section id="about" class="section-bg">
       <div class="container-fluid">
-        <div class="section-header  col-sm-10 offset-sm-2">
+        <div class="section-header  col-sm-10 offset-sm-1">
           <h3 class="section-title">Doctor's Career Updates 2018</h3>
           <span class="section-divider"></span>
           <p class="section-description">
