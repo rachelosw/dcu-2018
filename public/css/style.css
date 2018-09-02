@@ -1345,5 +1345,26 @@ body {
     background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8));
     padding: 100px;
   }
+
+  .btn-common {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    border: 0;
+    padding: 8px 30px;
+    color: #fff;
+    margin-top: 100px;
+  }
+
+  .btn-common:hover {
+    color: #fff;
+  }
+
+  #features img {
+    margin-bottom: 30px;
+  }
+
+  #features {
+    padding-bottom: 50px;
+  }
+  
   
   

@@ -13,9 +13,7 @@ use App\User;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes();
 
