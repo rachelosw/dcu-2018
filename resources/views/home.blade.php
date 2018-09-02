@@ -43,7 +43,7 @@
 
   <main id="main">
 
-    <section id="about" class="section-bg">
+    <!-- <section id="about" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
           <h3 class="section-title">Doctor's Career Updates 2018</h3>
@@ -85,7 +85,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <section id="features">
       <div class="container">
 
