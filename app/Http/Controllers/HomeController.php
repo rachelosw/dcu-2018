@@ -30,6 +30,8 @@ class HomeController extends Controller
         ->with('close_early', $setting->close_early_bird)
         ->with('price_early', $setting->price_early)
         ->with('price_normal', $setting->price_normal)
+        ->with('price_student_early', $setting->price_student_early)
+        ->with('price_student_normal', $setting->price_student_normal)
         ->with('countdown', $countdown_day);
     }
 }

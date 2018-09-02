@@ -26,22 +26,22 @@
             <h3 class="display-4">Hi, {{Auth::user()->name}}!</h3>
                 <div class="jumbotron">
                 <div class="icon"><i class="fas fa-pencil-alt"></i></div>
-                <p class="lead">Terimakasih sudah mendaftarkan dirimu. Ikuti 3 langkah di bawah ini untuk memastikan kehadiranmu di DCU 2018.</p>
+                <p class="lead">Thank you for registering yourself for DCU 2018. Please follow these steps to get yourself a seat on our seminars.</p>
                 <a class="btn btn-primary btn-lg" href="{{ route('auth.payment') }}" role="button">Make your payment</a>
                 <a class="btn btn-primary btn-lg" href="{{route('auth.upload')}}" role="button">Confirm payment</a>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                     <div class="icon text-center"><i class="fas fa-money-bill"></i></div>
-                    <p>Lakukan pembayaran. Kamu wajib menyelesaikan pembayaran sebelum maju ke tahap selanjutnya. Setelah itu, konfirmasi pembayaranmu dengan meng-<i>upload</i> bukti transfer.</p>
+                    <p>Make your payment, then kindly <i>upload</i> your payment proof.</p>
                     </div>
                     <div class="col-md-4">
                     <div class="icon text-center"><i class="far fa-clock"></i></div>
-                    <p>Silakan menunggu. Panitia akan mengonfirmasi data-data <i>profile</i> dan pembayaranmu. Kamu akan mendapat notifikasi melalui email jika pembayaranmu sudah dikonfirmasi.</p>
+                    <p>Please wait, our seminar staff will verify your payment. You will get an email notification when your registration have been accepted.</p>
                     </div>
                     <div class="col-md-4">
                     <div class="icon text-center"><i class="fas fa-check"></i></div>
-                    <p>Setelah panitia mengonfirmasi pembayaranmu, kamu bisa memilih paket seminar <b>DCU Opportunities</b> yang kamu minati. Kamu hanya bisa melakukan pemilihan sekali dan pilihanmu tidak bisa diubah lagi.</p>
+                    <p>Upon confirmation, you can pick the DCU Opportunity seminars package of your choice. Then, you will get an email with the seminars schedule attached.</p>
                     </div>
                 </div>
 

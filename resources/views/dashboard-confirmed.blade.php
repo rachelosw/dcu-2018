@@ -23,9 +23,9 @@
             <h3 class="display-4">Hi, {{Auth::user()->name}}!</h3>
                 <div class="jumbotron">
                 <div class="icon"><i class="fas fa-check-square"></i></i></div>
-                <p class="lead">Terimakasih, pembayaranmu sudah kami terima dan konfirmasi.</p>
+                <p class="lead">Thank you, your payment has been confirmed. Your status is now <b>accepted</b></p>
                 <hr class="my-4">
-                <p>Selanjutnya, silakan pilih seminar <i>DCU Opportunities</i> pilihanmu</p>
+                <p>Kindly pick a package of <i>DCU Opportunity</i> of your choice.</p>
                 <a class="btn btn-primary btn-lg" href="{{ route('auth.chooseSeminar') }}" role="button">Select seminar</a>
                 </div>
             </div>

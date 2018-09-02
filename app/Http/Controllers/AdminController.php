@@ -173,12 +173,16 @@ class AdminController extends Controller
             'close_registration' => 'required|date',
             'price_normal' => 'required|numeric',
             'price_early' => 'required|numeric',
+            'price_student_early' => 'required|numeric',
+            'price_student_normal' => 'required|numeric',
         
         ]);
         $setting = Setting::all()->first();
         if ($setting === null) {
             $setting = new Setting;
         }
+        $setting->price_student_early = $request->price_student_early;
+        $setting->price_student_normal = $request->price_student_normal;
         $setting->account_name = $request->account_name;
         $setting->account_bank = $request->account_bank;
         $setting->account_number = $request->account_number;

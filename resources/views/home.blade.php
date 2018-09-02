@@ -15,16 +15,16 @@
     <img class="img-fluid" src="{{ asset('img/slider1.jpg') }}" alt="First slide">
     <div class="carousel-caption d-none d-md-block">
     <h2>Welcome to DCU 2018</h2>
-    <p>Pelajari lebih lanjut tentang DCU tahun ini</p>
-    <a href="#about" class="btn-get-started scrollto">Learn more</a>
+    <p>Learn more about this event</p>
+    <a href="{{route('about')}}" class="btn-get-started scrollto">Learn more</a>
   </div>
   </div>
   <div class="carousel-item">
   <img class="img-fluid" src="{{ asset('img/slider2.jpg') }}" alt="First slide">
     <div class="carousel-caption d-none d-md-block">
     <h2>{{ $countdown }} days to go</h2>
-    <p>Segera daftarkan dirimu sebelum pendaftaran ditutup!</p>
-    <a href="#about" class="btn-get-started scrollto">Learn more</a>
+    <p>before the registration closed. Make sure you get yourself a seat.</p>
+    <a href="{{route('about')}}" class="btn-get-started scrollto">Learn more</a>
   </div>
   
 </div>
@@ -43,49 +43,17 @@
 
   <main id="main">
 
-    <!-- <section id="about" class="section-bg">
+    <section id="about" class="section-bg">
       <div class="container-fluid">
-        <div class="section-header">
+        <div class="section-header  col-sm-10 offset-sm-2">
           <h3 class="section-title">Doctor's Career Updates 2018</h3>
           <span class="section-divider"></span>
           <p class="section-description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>
-            sunt in culpa qui officia deserunt mollit anim id est laborum
+          Doctor’s Career Updates (DCU) is the foremost, the biggest, and the most illustrious seminar exploring assorted careers in medical fields in Indonesia as it proudly presents you medical doctors from ranging fields and backgrounds as its speakers.
           </p>
-          <div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            
-    </div>
-</div>
+        
         </div>
-
-        <div class="row">
-          <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="img/about-img.jpg" alt="">
-          </div>
-
-          <div class="col-lg-6 content wow fadeInRight">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet cursus sit amet dictum sit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
+    </section>
     <section id="features">
       <div class="container">
 
@@ -99,17 +67,17 @@
 
         <div class="col-sm-3">
         <img src="{{ asset('img/opportunity.png') }}" class="img-fluid"><br>
-        <a href="{{ route('dcu-inspiration') }}" class="btn-common">Learn more</a>
+        <a href="{{ route('dcu-opportunity') }}" class="btn-common">Learn more</a>
         </div>
 
         <div class="col-sm-3">
-        <img src="{{ asset('img/specials.png') }}" class="img-fluid">
-        <a href="{{ route('dcu-inspiration') }}" class="btn-common">Learn more</a>
+        <img src="{{ asset('img/specials.png') }}" class="img-fluid"><br>
+        <a href="{{ route('dcu-specials') }}" class="btn-common">Learn more</a>
         </div>
 
         <div class="col-sm-3">
         <img src="{{ asset('img/care.png') }}" class="img-fluid"><br>
-        <a href="{{ route('dcu-inspiration') }}" class="btn-common">Learn more</a>
+        <a href="{{ route('dcu-care') }}" class="btn-common">Learn more</a>
         </div>
 
       </div>
@@ -126,7 +94,7 @@
         <div class="section-header">
           <h3 class="section-title">Don't miss it!</h3>
           <span class="section-divider"></span>
-          <p class="section-description">Ikuti langkah-langkah berikut untuk mendaftar</p>
+          <p class="section-description">Follow these steps to register yourself</p>
         </div>
 
         <div class="row">
@@ -135,7 +103,7 @@
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="icon ion-ios-paper-outline"></i></div>
               <h4 class="title"><a href="">Register yourself</a></h4>
-              <p class="description">Daftarkan dirimu di <a href="{{ route('register') }}">sini.</a> Isi lengkap data-datamu dan pastikan terisi dengan benar.</p>
+              <p class="description">Sign up for an account <a href="{{ route('register') }}">here.</a> Please make sure to fill in your data correctly.</p>
             </div>
           </div>
 
@@ -143,7 +111,7 @@
             <div class="box wow fadeInRight">
               <div class="icon"><i class="icon ion-ios-pricetag-outline"></i></div>
               <h4 class="title"><a href="">Make your payment</a></h4>
-              <p class="description">Lakukan pembayaran sesuai dengan harga yang tertera di halaman pembayaran. Setelah itu, upload bukti pembayaranmu.</p>
+              <p class="description">Pay for the amount written on the payment page via bank transfer, before uploading the picture of your payment proof.</p>
             </div>
           </div>
 
@@ -151,7 +119,7 @@
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="icon ion-ios-clock-outline"></i></div>
               <h4 class="title"><a href="">Wait for confirmation</a></h4>
-              <p class="description">Panitia akan me-review data-data dan pembayaranmu. Setelah itu panitia akan mengubah status pendaftaranmu menjadi terkonfirmasi.</p>
+              <p class="description">Our seminar staff will verify your data and payment. Then we will change your status to <b>accepted</b></p>
             </div>
           </div>
 
@@ -159,7 +127,7 @@
             <div class="box wow fadeInRight">
               <div class="icon"><i class="icon ion-ios-checkmark-outline"></i></div>
               <h4 class="title"><a href="">Choose your Seminar Package</a></h4>
-              <p class="description">Setelah terkonfirmasi, pilihlah paket seminar <a href="#">DCU Opportunities</a> pilihanmu. Setelah itu kamu akan mendapat email konfirmasi dan jadwal seminar.</p>
+              <p class="description">After your registration is confirmed, pick a <a href="#">DCU Opportunity</a> seminar package of your choice. You will get a confirmation email with the seminars schedule attached.</p>
             </div>
           </div>
 
@@ -171,36 +139,7 @@
       Clients
     ============================-->
     <section id="clients">
-      <div class="container">
-
-        <div class="row wow fadeInUp">
-
-          <div class="col-md-2">
-            <img src="img/clients/client-1.png" alt="">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/clients/client-2.png" alt="">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/clients/client-3.png" alt="">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/clients/client-4.png" alt="">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/clients/client-5.png" alt="">
-          </div>
-
-          <div class="col-md-2">
-            <img src="img/clients/client-6.png" alt="">
-          </div>
-
-        </div>
-      </div>
+     
     </section>
     <section id="pricing" class="section-bg">
       <div class="container">
@@ -216,18 +155,21 @@
           <div class="col-md-6">
             <div class="box featured wow fadeInLeft">
               <h3>Early bird</h3>
-              <h4><sup>Rp</sup>{{$price_early}}</h4>
+              <h4><span>Student</span> <sup>Rp</sup>{{ number_format($price_student_early, 0) }}</h4>
+              <h4><span>Non-student</span> <sup>Rp</sup>{{ number_format($price_early, 0) }}</h4>
+                
             </div>
           </div>
 
           <div class="col-md-6">
             <div class="box wow fadeInRight">
               <h3>Normal</h3>
-              <h4><sup>Rp</sup>{{$price_normal}}</h4>
+              <h4><span>Student</span> <sup>Rp</sup>{{ number_format($price_student_normal, 0) }}</h4>
+              <h4><span>Non-student</span> <sup>Rp</sup>{{ number_format($price_normal, 0) }}</h4>
             </div>
           </div>
 
-         
+          <p>* Early bird rate only applies until {{$close_early}}</p>
 
         </div>
       </div>

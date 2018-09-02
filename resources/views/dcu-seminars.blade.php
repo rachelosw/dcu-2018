@@ -14,8 +14,6 @@
     <section id="seminar-about" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
-          <h3 class="section-title">{{ $category->category_name}}</h3>
-          <span class="section-divider"></span>
           
           <div class="container">
     <div class="row">
@@ -30,7 +28,15 @@
 
         <div class="row">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="img/about-img.jpg" alt="">
+            @if ($category->category_name === 'DCU Inspiration')
+            <img src="{{ asset('img/logodcuinspiration.png') }}" alt="" class="img-fluid">
+            @elseif ($category->category_name === 'DCU Opportunity')
+            <img src="{{ asset('img/logodcuopportunity.png') }}" alt="" class="img-fluid">
+            @elseif ($category->category_name === 'DCU Specials')
+            <img src="{{ asset('img/logodcuspecials.png') }}" alt="" class="img-fluid">
+            @elseif ($category->category_name === 'DCU Care')
+            <img src="{{ asset('img/logodcucare.png') }}" alt="" class="img-fluid">
+            @endif
           </div>
 
           <div class="col-lg-6 content wow fadeInRight">

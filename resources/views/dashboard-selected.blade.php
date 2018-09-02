@@ -24,7 +24,7 @@
             <h3 class="display-4">Hi, {{Auth::user()->name}}!</h3>
                 <div class="jumbotron">
                 <div class="icon"><i class="fas fa-check-square"></i></i></div>
-                <p class="lead">Terimakasih, kamu telah menyelesaikan seluruh langkah pendaftaran DCU 2018. Sampai berjumpa di hari H!</p>
+                <p class="lead">Thank you! You have completed all the steps of DCU seminar registration. Please check your email for seminar schedule. Looking forward to meeting you on the D-Day!</p>
                 <hr class="my-4">
                 
                 </div>

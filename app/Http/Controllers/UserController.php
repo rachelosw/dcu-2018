@@ -124,11 +124,14 @@ class UserController extends Controller
         $early_end_date = $setting->close_early_bird;
         $type;
         $price;
+        $price_student;
         if (Carbon::now() <= $setting->close_early_bird) {
             $price = $setting->price_early;
+            $price_student = $setting->price_student_early;
             $type = 'early';
         } else {
             $price = $setting->price_normal;
+            $price_student = $setting->price_normal_student;
             $type = 'normal';
         }
         return view('dashboard-payment')
@@ -137,7 +140,8 @@ class UserController extends Controller
         ->with('account_bank', $account_bank)
         ->with('type', $type)
         ->with('price', $price)
-        ->with('early_end_date', $early_end_date);
+        ->with('early_end_date', $early_end_date)
+        ->with('price_student', $price_student);
     }
     
 }

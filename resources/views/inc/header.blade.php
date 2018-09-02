@@ -10,10 +10,11 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="{{ route('index') }}">Home</a></li>
-          <li class="menu-has-children"><a href="">About DCU</a>
+          <li><a href="{{ route('about') }}">About DCU 2018</a></li>
+          <li class="menu-has-children"><a href="">Seminars</a>
             <ul>
               <li><a class="dropdown-item" href="{{ route('dcu-inspiration') }}">{{ __('DCU Inspiration')}}</a></li>
-              <li><a class="dropdown-item" href="{{ route('dcu-opportunities') }}">{{ __('DCU Opportunity')}}</a></li>
+              <li><a class="dropdown-item" href="{{ route('dcu-opportunity') }}">{{ __('DCU Opportunity')}}</a></li>
               <li><a class="dropdown-item" href="{{ route('dcu-specials') }}">{{ __('DCU Specials')}}</a></li>
               <li><a class="dropdown-item" href="{{ route('dcu-care') }}">{{ __('DCU Care')}}</a></li>
               </ul>
@@ -23,8 +24,10 @@
           <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
           <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
           @else
-          <li class="menu-has-children"><a href=""><i class="icon ion-ios-person"></i> {{ Auth::user()->name }}</a>
+          <li class="menu-has-children"><a href="">Hi, {{ Auth::user()->name }}</a>
             <ul>
+            
+              <li><a class="dropdown-item" href="{{ route('auth.dashboard') }}">{{ __('Dashboard')}}</a></li>
               <li><a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -34,7 +37,6 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form></li>
-              <li><a class="dropdown-item" href="{{ route('auth.dashboard') }}">{{ __('Dashboard')}}</a></li>
             </ul>
           </li>
           @endguest

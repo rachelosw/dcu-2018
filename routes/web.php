@@ -27,8 +27,9 @@ Route::get('/dashboard/choose-seminar', ['as' => 'auth.chooseSeminar', 'uses' =>
 Route::patch('/dashboard/choose-seminar/{package}', ['as' => 'auth.seminarChosen', 'uses' => 'SeminarController@setSeminar'])->middleware('is_accepted');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'AboutController@getPage')->name('about');
 Route::get('/dcu-inspiration', ['as' => 'dcu-inspiration', 'uses' => 'SeminarController@getDcuInspiration']);
-Route::get('/dcu-opportunity', ['as' => 'dcu-opportunities', 'uses' => 'SeminarController@getDcuOpportunities']);
+Route::get('/dcu-opportunity', ['as' => 'dcu-opportunity', 'uses' => 'SeminarController@getDcuOpportunities']);
 Route::get('/dcu-specials', ['as' => 'dcu-specials', 'uses' => 'SeminarController@getDcuSpecials']);
 Route::get('/dcu-care', ['as' => 'dcu-care', 'uses' => 'SeminarController@getDcuCare']);
 

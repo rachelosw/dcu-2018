@@ -23,18 +23,21 @@
 </ul>
             </div>
             <div class="col-md-9 dashboard-container">
-            <h3 class="display-4">Silakan membayar via transfer ke rekening di bawah ini</h3>
+            <h3 class="display-4">Please make a payment via bank transfer to the following account:</h3>
                 <div class="jumbotron">
                 <p class="lead">{{ $account_bank }} {{ $account_number }} a/n {{ $account_name }}</p>
         
                 </div>
                 <div class="row">
+                    <h2>Rp {{ number_format($price_student, 0) }}</h2> <span> student</span>
                     
-                    <h2>Rp {{ $price }}</h2>
+                </div>
+                <div class="row">
+                <h2>Rp {{ number_format($price, 0) }}</h2> <span> non-student</span>
                     @if ($type === 'early')
                     <p>*Harga di atas merupakan harga early bird, segera bayar sebelum {{ $early_end_date }} untuk mendapatkan harga ini.</p> 
                     @endif
-                </div>
+                    </div>
 
 
             </div>

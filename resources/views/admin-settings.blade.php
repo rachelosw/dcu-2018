@@ -94,7 +94,7 @@
                                     
                                 </div>
                                 <div class="form-group">
-                                    <label for="price_normal" class="col-md-12">{{ __('Harga normal') }}</label>
+                                    <label for="price_normal" class="col-md-12">{{ __('Harga normal non-student') }}</label>
                                     <div class="col-md-12">
                                         <input type="text" name="price_normal" value="{{ $data->price_normal }}" class="form-control form-control-line" required autofocus> 
                                         @if ($errors->has('price_normal'))
@@ -106,12 +106,37 @@
 
                                 </div>
                                 <div class="form-group">
-                                    <label for="price_early" class="col-md-12">{{ __('Harga early bird') }}</label>
+                                    <label for="price_normal" class="col-md-12">{{ __('Harga normal student') }}</label>
+                                    <div class="col-md-12">
+                                        <input type="text" name="price_student_normal" value="{{ $data->price_student_normal }}" class="form-control form-control-line" required autofocus> 
+                                        @if ($errors->has('price_student_normal'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('price_student_normal') }}</strong>
+                                            </span>
+                                    @endif
+                                        </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="price_early" class="col-md-12">{{ __('Harga early bird non-student') }}</label>
                                     <div class="col-md-12">
                                         <input type="text" name="price_early" value="{{ $data->price_early }}" class="form-control form-control-line" required autofocus> 
                                         @if ($errors->has('price_early'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('price_early') }}</strong>
+                                            </span>
+                                    @endif
+                                        </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="price_student_early" class="col-md-12">{{ __('Harga early bird student') }}</label>
+                                    <div class="col-md-12">
+                                        <input type="text" name="price_student_early" value="{{ $data->price_student_early }}" class="form-control form-control-line" required autofocus> 
+                                        @if ($errors->has('price_student_early'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('price_student_early') }}</strong>
                                             </span>
                                     @endif
                                         </div>

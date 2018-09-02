@@ -25,7 +25,7 @@
             <h3 class="display-4">Hi, {{Auth::user()->name}}!</h3>
                 <div class="jumbotron">
                 <div class="icon"><i class="far fa-clock"></i></div>
-                <p class="lead">Terimakasih telah mengonfirmasi pembayaranmu. Bukti pembayaranmu sudah masuk ke sistem. Silakan menunggu, panitia akan me-<i>review</i> data dan pembayaranmu.</p>
+                <p class="lead">Thank you for uploading your payment proof. Our seminar staff will review your data and payment. You will get an email notification when your payment has been confirmed</p>
                 <a class="btn btn-primary btn-lg" href="{{ route('auth.upload') }}" role="button">Re-upload your payment proof</a>
                 </div>
                 
