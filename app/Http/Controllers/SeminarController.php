@@ -5,12 +5,25 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Mail;
 use App\Seminar;
 use App\SeminarCategory;
 use App\SeminarPacket;
+use App\User;
+use App\Mail\FinishedMail;
 
 class SeminarController extends Controller
 {
+
+    public function sendEmail(User $user)
+    {
+        $obj = new \stdClass();
+        $obj->sender = 'DCU Seminar Staff';
+        $obj->name = $user->name;
+ 
+        Mail::to($user->email)->send(new FinishedMail($obj));
+    }
+
     public function getChooseSeminarView() {
         $package = SeminarPacket::all();
         $seminarA = Seminar::where('seminar_package', 'A')->orderBy('seminar_time', 'asc')->get();
@@ -31,10 +44,13 @@ class SeminarController extends Controller
         $user->save();
         $package->registrant++;
         $package->save();
-        if ($package->registrant === $package->quota) {
+        if ($package->registrant >= $package->quota) {
             $package->isClosed = true;
             $package->save();
         }
+
+        $this->sendEmail($user);
+
         return Redirect::to('/dashboard');
     }
 

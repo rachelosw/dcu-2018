@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Setting;
+use App\Mail\RegisterMail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Mail;
 use Carbon\Carbon;
 
 class RegisterController extends Controller
@@ -73,7 +75,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
@@ -84,5 +86,16 @@ class RegisterController extends Controller
             'phone_number' => $data['phone_number'],
             'line_id' => $data['line_id'],
         ]);
+        $this->sendEmail($user);
+        return $user;
+    }
+
+    public function sendEmail(User $user)
+    {
+        $obj = new \stdClass();
+        $obj->sender = 'DCU Seminar Staff';
+        $obj->name = $user->name;
+ 
+        Mail::to($user->email)->send(new RegisterMail($obj));
     }
 }

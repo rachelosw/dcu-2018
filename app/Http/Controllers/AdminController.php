@@ -9,9 +9,11 @@ use App\Seminar;
 use App\SeminarCategory;
 use App\SeminarPacket;
 use App\Setting;
+use App\Mail\ConfirmedMail;
 use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use File;
 
 class AdminController extends Controller
@@ -23,6 +25,15 @@ class AdminController extends Controller
     public function admin()
     {
         return view('admin');
+    }
+
+    public function sendEmail(User $user)
+    {
+        $obj = new \stdClass();
+        $obj->sender = 'DCU Seminar Staff';
+        $obj->name = $user->name;
+ 
+        Mail::to($user->email)->send(new ConfirmedMail($obj));
     }
 
     public function getUsers() {
@@ -49,6 +60,8 @@ class AdminController extends Controller
 
         $user->status = 'accepted';
         $user->save();
+
+        $this->sendEmail($user);
         
         return back();
     }

@@ -75,7 +75,7 @@
                                             <td>
                                             <a href="{{route('admin.editSeminar', $seminar)}}" class="btn btn-default waves-effect">Edit</a>
                                             @if ($seminar->seminar_category === 'DCU Opportunity')
-                                            <button id="change-packet" class="btn btn-default waves-effect waves-light" data-toggle="modal" data-target="#change-packet-{{ $seminar->id }}">Change packet</button>
+                                            <button id="change-packet" class="btn btn-default waves-effect waves-light" data-toggle="modal" data-target="#change-packet-{{ $seminar->id }}">Change package</button>
                                             
                                             <div id="change-packet-{{$seminar->id}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="custom-width-modalLabel" aria-hidden="true" style="display: none;">
                                             <div class="modal-dialog" style="width:55%;">
