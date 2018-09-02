@@ -99,17 +99,17 @@
 
         <div class="col-sm-3">
         <img src="{{ asset('img/opportunity.png') }}" class="img-fluid"><br>
-        <a href="{{ route('dcu-inspiration') }}" class="btn-common">Learn more</a>
+        <a href="{{ route('dcu-opportunity') }}" class="btn-common">Learn more</a>
         </div>
 
         <div class="col-sm-3">
         <img src="{{ asset('img/specials.png') }}" class="img-fluid">
-        <a href="{{ route('dcu-inspiration') }}" class="btn-common">Learn more</a>
+        <a href="{{ route('dcu-specials') }}" class="btn-common">Learn more</a>
         </div>
 
         <div class="col-sm-3">
         <img src="{{ asset('img/care.png') }}" class="img-fluid"><br>
-        <a href="{{ route('dcu-inspiration') }}" class="btn-common">Learn more</a>
+        <a href="{{ route('dcu-care') }}" class="btn-common">Learn more</a>
         </div>
 
       </div>
