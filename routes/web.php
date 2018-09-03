@@ -48,6 +48,8 @@ Route::get('/admin/seminars/edit/{seminar}', ['as' => 'admin.editSeminar', 'uses
 Route::patch('/admin/seminars/edit/{seminar}', ['as' => 'admin.seminarEdited', 'uses' => 'AdminController@seminarEdited'])->middleware('is_admin');
 Route::delete('/admin/seminars/delete/{seminar}', ['as' => 'admin.deleteSeminar', 'uses' => 'AdminController@deleteSeminar'])->middleware('is_admin');
 Route::patch('/admin/seminars/edit/package/{seminar}', ['as' => 'admin.changePacket', 'uses' => 'AdminController@changeSeminarPacket'])->middleware('is_admin');
+Route::get('/admin/packages', ['as' => 'admin.getPackages', 'uses' => 'AdminController@getPackages'])->middleware('is_admin');
+Route::patch('/admin/packages/{package}', ['as' => 'admin.setQuota', 'uses' => 'AdminController@setQuota'])->middleware('is_admin');
 
 Route::get('admin/categories', ['as' => 'admin.seminarCategories', 'uses' => 'AdminController@seminarCategories'])->middleware('is_admin');
 Route::get('admin/categories/edit/{category}', ['as' => 'admin.editCategory', 'uses' => 'AdminController@editCategory'])->middleware('is_admin');

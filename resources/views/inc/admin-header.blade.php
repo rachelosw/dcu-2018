@@ -58,6 +58,9 @@
                         <a href="{{ route('admin.seminarCategories') }}" class="waves-effect"><i class="fas fa-bullhorn" aria-hidden="true"></i> Kategori Seminar</a>
                     </li>
                     <li>
+                        <a href="{{ route('admin.getPackages') }}" class="waves-effect"><i class="fas fa-bullhorn" aria-hidden="true"></i> Paket Seminar</a>
+                    </li>
+                    <li>
                         <a href="{{ route('admin.settingsPage') }}" class="waves-effect"><i class="fas fa-cogs"></i> Settings</a>
                     <li>
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="waves-effect">

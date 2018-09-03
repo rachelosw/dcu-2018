@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>DCU 2018 Admin Dashboard</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet"

@@ -207,5 +207,17 @@ class AdminController extends Controller
         $setting->save();
         return back();
     }
+
+    public function getPackages() {
+        $packages = SeminarPacket::all();
+        return view('admin-packages')
+        ->with('packages', $packages);
+    }
+
+    public function setQuota(SeminarPacket $package) {
+        $package->quota = request('quota');
+        $package->save();
+        return back();
+    }
     
  }
