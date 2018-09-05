@@ -131,7 +131,7 @@ class UserController extends Controller
             $type = 'early';
         } else {
             $price = $setting->price_normal;
-            $price_student = $setting->price_normal_student;
+            $price_student = $setting->price_student_normal;
             $type = 'normal';
         }
         return view('dashboard-payment')
