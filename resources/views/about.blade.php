@@ -8,9 +8,6 @@
 
   <main id="main">
 
-    <!--==========================
-      About Us Section
-    ============================-->
     <section id="seminar-about" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
@@ -26,10 +23,6 @@
 
       </div>
     </section><!-- #about -->
-
-    <!--==========================
-      Product Featuress Section
-    ============================-->
     <section id="about" class="section-bg">
       <div class="container">
       <h3 class="section-title wow fadeInLeft">What is DCU</h3>
@@ -61,11 +54,7 @@
 
           </div>
           <div class="col-sm-7">
-          <ul>
-            <li>Yellow: Representing optimism</li>
-            <li>Arrow pointing upward: Representing growth</li>
-            <li>Arrow pointing rightward: Representing forward thinking</li>
-            </ul>
+          <p>This year, DCU 2018 is bringing “The Future is Now” as our theme to represent the dream to assist medical students and doctors in embodying their minds with forward and adaptive thinking towards changes in the future, especially in medical working field. We are making this dream come true by organizing seminars that explore career opportunities in FKUI, seminars that bring out the significance of humanity, and seminars that are memorable and able to inspire its participants.</p>
           </div>
 
         </div>
@@ -119,13 +108,7 @@
             <div class="contact-about">
               <h3>Contact us</h3>
               <p>Please find us through these outlets</p>
-              <!-- <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              </div> -->
+              
             </div>
           </div>
 
@@ -138,7 +121,7 @@
 
               <div>
                 <i class="ion-ios-email-outline"></i>
-                <p>admin@doctorscareerupdates.com</p>
+                <p>doctorscareerupdates@gmail.com</p>
               </div>
 
               <div>
