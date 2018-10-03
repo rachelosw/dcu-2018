@@ -145,7 +145,7 @@
                                                         @csrf
                                                         @method('PATCH')
                                                 <div class="modal-body">
-                                                    <p>Pilih paket C?</p>
+                                                    <p>Choose package C?</p>
                                                 </div>
                                                 
                                                 <div class="modal-footer">
@@ -193,7 +193,7 @@
                                                         @csrf
                                                         @method('PATCH')
                                                 <div class="modal-body">
-                                                    <p>Pilih paket D?</p>
+                                                    <p>Choose package D?</p>
                                                 </div>
                                                 
                                                 <div class="modal-footer">

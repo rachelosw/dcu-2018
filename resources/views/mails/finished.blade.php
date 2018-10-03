@@ -381,7 +381,7 @@ font-size: 0px; } }
   <!--[if (mso)|(IE)]></td><td width="32" style="width:32px; padding-right: 0;" valign="top"><![endif]-->
 <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;Margin-right: 0">
   <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
-    <a href="mailto:admin@doctorscareerudpates.com" title="E-Mail" target="_blank">
+    <a href="mailto:dcufkui2018@gmail.com" title="E-Mail" target="_blank">
       <img src="{{asset('img/mail.png')}}" alt="E-Mail" title="E-Mail" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
     </a>
   <div style="line-height:5px;font-size:1px">&#160;</div>
