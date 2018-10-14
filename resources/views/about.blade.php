@@ -121,7 +121,7 @@
 
               <div>
                 <i class="ion-ios-email-outline"></i>
-                <p>doctorscareerupdates@gmail.com</p>
+                <p>dcufkui2018@gmail.com</p>
               </div>
 
               <div>
