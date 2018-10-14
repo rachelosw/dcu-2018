@@ -1,2 +1,3 @@
 Hello, {{$confirmation->name}}
 Thank you for submitting your DCU 2018 payment proof. Your payment has been confirmed by our staff. You're one step closer to securing a seat at our seminars, the next thing that you need to do is to pick a DCU Opportunity seminar package of your choice. Have a nice day!
+Note: this is an automated email. Do not reply to this email. Kindly send your inquiry to dcufkui2018@gmail.com instead.
