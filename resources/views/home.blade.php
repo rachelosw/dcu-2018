@@ -15,7 +15,7 @@
     <img class="img-fluid" src="{{ asset('img/slider1.jpg') }}" alt="First slide">
     <div class="carousel-caption d-none d-md-block">
     <h2>Welcome to DCU 2018</h2>
-    <p>Learn more about this event</p>
+    <p>Rumpun Ilmu Kesehatan, 8-9 Desember 2018</p>
     <a href="{{route('about')}}" class="btn-get-started scrollto">Learn more</a>
   </div>
   </div>
